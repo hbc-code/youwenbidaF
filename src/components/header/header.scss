@@ -1,0 +1,29 @@
+.header{
+    background-color: #30CB88;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    .header-left{
+        display: flex;
+        align-items: center;
+        line-height: 60px;
+        h1{
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+        span{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    .header-right{
+        line-height: 60px;
+        padding: 0px 20px;
+        a{
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.admin-topbar{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    .admin-topbar-topbar{
+        border-radius: 10px 10px 0px 0px;
+        color: white;
+        height: 40px;
+        background-color: #30CB88;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .time-pick{
+        text-align: right;
+        padding-right: 10px;
+    }
+}

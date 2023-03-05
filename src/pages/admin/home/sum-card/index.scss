@@ -1,0 +1,49 @@
+.ant-card-grid {
+    float: left;
+    width: 33.33%;
+    padding: 24px;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 1px 0 0 0 #f0f0f0, 0 1px 0 0 #f0f0f0, 1px 1px 0 0 #f0f0f0, 1px 0 0 0 #f0f0f0 inset, 0 1px 0 0 #f0f0f0 inset;
+    box-shadow: 1px 0 0 0 #f0f0f0, 0 1px 0 0 #f0f0f0, 1px 1px 0 0 #f0f0f0, 1px 0 0 0 #f0f0f0 inset, 0 1px 0 0 #f0f0f0 inset;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.card-grid{
+    border-radius: 8px;
+    width: 300px;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    .sum-icon{
+        font-size: 40px;
+        color: #30CB88;
+        font-weight: bold;
+    }
+    div{
+        margin-top: -25px;
+        h1{
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: -20px;
+        }
+        div{
+            margin-bottom: -20px;
+        }
+    }
+}
+.card-grid:hover{
+    cursor: pointer;
+    background-color: #30CB88;
+    color: whitesmoke;
+    h1{
+        color: white;
+    }
+    .sum-icon{
+        color: white;
+        font-weight: bold;
+    }
+   
+}

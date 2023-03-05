@@ -1,0 +1,46 @@
+.echart{
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    .echart1{
+        width: 49%;
+        .echart-content1{
+            width: 100%;
+            height: 360px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            .echart-content1-line{
+                margin-top: 20px;
+                width: 500px;
+                height: 350px;
+            }
+            .echart-content1-bar{
+                margin-top: 20px;
+                width: 340px;
+                height: 350px;
+            }
+        }
+    }
+    .echart2{
+        width: 49%;
+        .echart-content2{
+            height: 360px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            .echart-content2-line{
+                margin-top: 20px;
+                width: 500px;
+                height: 350px;
+            }
+            .echart-content2-bar{
+                margin-top: 20px;
+                width: 340px;
+                height: 350px;
+            }
+        }
+    }
+}

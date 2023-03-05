@@ -1,0 +1,19 @@
+.home-list{
+    width: 100%;
+    padding: 0px 30px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    .home-list1{
+        width: 49%;
+        .home-list-content1{
+            background-color: white;
+        }
+    }
+    .home-list2{
+        width: 49%;
+        .home-list-content2{
+            background-color: white;
+        }
+    }
+}

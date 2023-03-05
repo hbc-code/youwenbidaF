@@ -1,0 +1,23 @@
+.log-search{
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    .log-search-top{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        padding: 30px 30px 10px 30px;
+        background-color: #D2F1E3;
+        border-radius: 8px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                margin-right: 40px;
+            }
+        }
+    }
+    .log-search-list{
+        margin: 10px;
+    }
+}

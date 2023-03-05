@@ -1,0 +1,12 @@
+.feedback-content{
+    padding: 0px 20px;
+    .feedback-content-ul{
+        margin-top: -20px;
+        margin-left: -50px;
+        display: flex;
+        flex-direction: row;
+        li{
+            margin-left: 15px;
+        }
+    } 
+}

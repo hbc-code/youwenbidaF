@@ -1,0 +1,25 @@
+.msg-detail{
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    h1{
+        padding: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    hr{
+        height:2px;border:none;border-top:2px dotted #30CB88;
+    }
+    .msg-profile{
+        padding: 10px 20px 20px;
+        .msg-profile-ul{
+            margin-top: -20px;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            li{
+                margin-left: 15px;
+            }
+        }
+    }
+}

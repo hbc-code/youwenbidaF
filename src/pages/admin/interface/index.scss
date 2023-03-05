@@ -1,0 +1,40 @@
+.interface-msg{
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    .img-content{
+        .img-content-part1,.img-content-part2{
+            display: flex;
+            justify-content: flex-start;
+            > :first-child { margin-right: 100px; }
+            > :last-child { margin-left: 100px; }
+        }
+        padding: 30px;
+        .title{
+            font-size: 18px;
+            font-weight: 400;
+            color: #30CB88;
+            margin: 10px 0px;
+            
+        }
+        .lunbo{
+            display: flex;
+            flex-wrap: nowrap;
+            // justify-content: flex-start;
+        }
+        .logo{
+            display: flex;
+            justify-content: flex-start;
+            li{
+                margin-right: 20px;
+                width: 100%;
+                div{
+                    
+                   text-align: center;
+                }
+            }
+        }
+        
+    }
+
+}

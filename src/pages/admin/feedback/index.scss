@@ -1,0 +1,25 @@
+.feedback-infrom-msg{
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    .feedback-infrom-msg-search{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        padding: 10px 30px;
+        background-color: #D2F1E3;
+        border-radius: 8px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                margin-right: 40px;
+            }
+        }
+        
+    }
+    .feedback-infrom-msg-content{
+        margin: 10px;
+    }
+
+}
