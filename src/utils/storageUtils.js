@@ -3,7 +3,8 @@ import store from "store";
 const USER_KEY = "user";
 const Q_ID = "questionId";
 
-export default {
+
+const storageUtils = {
   //?存储用户
   saveUser(user) {
     store.set(USER_KEY, user);
@@ -31,3 +32,5 @@ export default {
     return store.get(Q_ID) || null;
   },
 };
+
+export default storageUtils;

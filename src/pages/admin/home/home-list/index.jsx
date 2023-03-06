@@ -50,6 +50,8 @@ export default function HomeList() {
     };
     initVolunteer(params);
     initSubject(params);
+    console.log(state.subjectDataSource)
+    //console.log(JSON.parse(state.subjectDataSource));
   }, []);
 
   //?处理表格分页点击事件
@@ -80,7 +82,10 @@ export default function HomeList() {
   return (
     <div className="home-list">
       <div className="home-list1">
-        <AdminTopBar tag="志愿者相关" timeShow="false" />
+        <AdminTopBar
+          tag="志愿者相关"
+          timeShow="false"
+        />
         <div className="home-list-content1">
           <Table
             bordered

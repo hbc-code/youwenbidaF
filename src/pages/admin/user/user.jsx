@@ -19,7 +19,6 @@ import {
   reqUpdateAccountRole,
   reqDeleteAccountById,
 } from "@/api/index";
-import { use } from "echarts";
 const { Option } = Select;
 
 export default function User() {
@@ -66,7 +65,7 @@ export default function User() {
       //console.log(state.adminId)
     }
     req();
-  }, []);
+  }, [state.pageSize]);
 
   //?实现分页
   const handleChangeUser = (value) => {
@@ -157,7 +156,7 @@ export default function User() {
     };
     //console.log(param)
     const res = await reqDeleteAccountById(param);
-    if (res.code == 1) {
+    if (res.code === 1) {
       message.success("删除成功");
       userSearch();
     }
@@ -175,7 +174,7 @@ export default function User() {
     };
     reqUpdateAccountRole(param)
       .then((res) => {
-        if (res.code == 1) {
+        if (res.code === 1) {
           message.success("成功修改角色！");
           userSearch();
         }
@@ -199,7 +198,7 @@ export default function User() {
       data: formData,
     }).then((res) => {
       console.log(res);
-      if (res.data.code == 1) {
+      if (res.data.code === 1) {
         message.success("成功导入！");
       } else {
         message.error("导入失败！");
@@ -253,11 +252,11 @@ export default function User() {
                 options={options}
                 onChange={handleChange}
                 placeholder={
-                  text == 1
+                  text === 1
                     ? "教师"
-                    : text == 2
+                    : text === 2
                     ? "志愿者"
-                    : text == 3
+                    : text === 3
                     ? "学生"
                     : "管理员"
                 }
@@ -270,11 +269,11 @@ export default function User() {
               options={options2}
               onChange={handleChange}
               placeholder={
-                text == 1
+                text === 1
                   ? "教师"
-                  : text == 2
+                  : text === 2
                   ? "志愿者"
-                  : text == 3
+                  : text === 3
                   ? "学生"
                   : "管理员"
               }

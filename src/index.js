@@ -13,7 +13,9 @@ root.render(
           token: {
             colorPrimary: "#30CB88",
             colorTextLabel: "#30CB88",
+            borderRadius:"0px"
           },
+          
         }}
       >
         <App />

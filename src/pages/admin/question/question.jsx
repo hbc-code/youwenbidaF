@@ -95,28 +95,28 @@ export default function Question() {
   const titleSearch = (e) => {
     //   //console.log(e.target.value)
     //   //console.log(e)
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       setState((pre) => ({ ...pre, title: null }));
     } else {
       setState((pre) => ({ ...pre, title: e.target.value }));
     }
   };
   const subjectSearch = (e) => {
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       setState((pre) => ({ ...pre, subjectName: null }));
     } else {
       setState((pre) => ({ ...pre, subjectName: e.target.value }));
     }
   };
   const collegeSearch = (e) => {
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       setState((pre) => ({ ...pre, college: null }));
     } else {
       setState((pre) => ({ ...pre, college: e.target.value }));
     }
   };
   const askSearch = (e) => {
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       setState((pre) => ({ ...pre, questionAccountId: null }));
     } else {
       setState((pre) => ({ ...pre, questionAccountId: e.target.value }));
@@ -149,7 +149,7 @@ export default function Question() {
   //? 时间选择器回调函数
   const onChange = (date, dateStrings) => {
     //console.log(dateStrings)
-    if (dateStrings == "") {
+    if (dateStrings === "") {
       setState((pre) => ({ ...pre, time: null }));
     } else {
       setState((pre) => ({ ...pre, time: dateStrings }));
@@ -260,7 +260,7 @@ export default function Question() {
     //     .then(res=>{
     //         //console.log(res)
     //         const {code} = res;
-    //         if(1 == code) {
+    //         if(1 === code) {
     // message.success('修改问题成功！');
     // this.setState({editIsModalVisible:false})
     //         }

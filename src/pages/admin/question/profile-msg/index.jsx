@@ -22,7 +22,7 @@ export default function ProfileMsg() {
     async function reqData() {
       const res = await reqGetAccountById({ accountId: stuIdStore.getState() });
       //console.log(res)
-      if (res.code == 1) {
+      if (res.code === 1) {
         let {
           imgPath,
           userName,
@@ -81,11 +81,11 @@ export default function ProfileMsg() {
         <li>姓名：{userName}</li>
         <li>
           角色：
-          {role == 1
+          {role === 1
             ? "教师"
-            : role == 2
+            : role === 2
             ? "志愿者"
-            : role == 3
+            : role === 3
             ? "学生"
             : "管理员"}
         </li>

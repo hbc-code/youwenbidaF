@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 import menuList from '../../config/menuConfig';
-
+import './index.scss'
 import { Menu } from 'antd'
 //? 在 antd 中使用阿里图标
 import { createFromIconfontCN } from '@ant-design/icons';

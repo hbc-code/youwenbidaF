@@ -1,0 +1,51 @@
+.ant-menu-item {
+  border-radius: 0px;
+  margin: 4px 0 8px !important;
+  width: 100% !important;
+}
+.ant-menu-item .ant-menu-item-icon,
+.ant-menu-submenu-title .ant-menu-item-icon,
+.ant-menu-item .anticon,
+.ant-menu-submenu-title .anticon {
+  min-width: 14px;
+  margin-right: 10px;
+  font-size: 14px;
+  -webkit-transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+    margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.3s;
+  transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+    margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.3s;
+}
+.ant-menu-item::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #30cb88 !important;
+  -webkit-transform: scaleY(0.0001);
+  transform: scaleY(0.0001);
+  opacity: 0;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+    -webkit-transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+    -webkit-transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+    -webkit-transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+  content: "";
+}
+.ant-menu-item-selected::after {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+    -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+    -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+    -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}

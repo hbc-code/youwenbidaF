@@ -112,7 +112,7 @@ export default function UploadImg({ type, grade, num }) {
       data: formData,
     }).then((res) => {
       //console.log(res)
-      if (res.data.code == 1) {
+      if (res.data.code === 1) {
         message.success("修改成功");
         initPic();
       }
@@ -153,7 +153,7 @@ export default function UploadImg({ type, grade, num }) {
       </Upload>
       <Button
         type="primary"
-        disabled={state.status == 0}
+        disabled={state.status === 0}
         onClick={change}
         style={{ marginLeft: 5 }}
       >

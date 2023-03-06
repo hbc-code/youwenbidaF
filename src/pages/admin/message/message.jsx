@@ -66,7 +66,7 @@ export default function Message() {
   const title = (e) => {
     //   //console.log(e.target.value)
     //   //console.log(e)
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       setState((pre) => ({ ...pre, title: null }));
     } else {
       setState((pre) => ({ ...pre, title: e.target.value }));
@@ -75,7 +75,7 @@ export default function Message() {
   const authod = (e) => {
     //   //console.log(e.target.value)
     //   //console.log(e)
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       setState((pre) => ({ ...pre, adminName: null }));
     } else {
       setState((pre) => ({ ...pre, adminName: e.target.value }));
@@ -84,7 +84,7 @@ export default function Message() {
   const txtSearch = (e) => {
     //   //console.log(e.target.value)
     //   //console.log(e)
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       setState((pre) => ({ ...pre, content: null }));
     } else {
       setState((pre) => ({ ...pre, content: e.target.value }));
@@ -95,7 +95,7 @@ export default function Message() {
   const titleSearch = (e) => {
     //   //console.log(e.target.value)
     //   //console.log(e)
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       setState((pre) => ({ ...pre, searchTitle: null }));
     } else {
       setState((pre) => ({ ...pre, searchTitle: e.target.value }));
@@ -105,7 +105,7 @@ export default function Message() {
   const authodSearch = (e) => {
     //   //console.log(e.target.value)
     //   //console.log(e)
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       setState((pre) => ({ ...pre, searchAdminName: null }));
     } else {
       setState((pre) => ({ ...pre, searchAdminName: e.target.value }));
@@ -167,12 +167,12 @@ export default function Message() {
       adminId,
       content,
     };
-    if (title == null || content == null) {
+    if (title === null || content === null) {
       message.error("请填写完资讯后再发布！");
     } else {
       reqAddNews(param).then((res) => {
         //console.log(res)
-        if (res.code == 1 && res.data != false) {
+        if (res.code === 1 && res.data !== false) {
           message.success("发布资讯成功！");
           /* setState((pre) => ({
             ...pre,
@@ -198,7 +198,7 @@ export default function Message() {
       newsId: e,
     };
     reqGetNews(param).then((res) => {
-      if (res.code == 1) {
+      if (res.code === 1) {
         message.success("请查看上方咨询编辑");
         let { title, content, adminName } = res.data;
         content = content.replace(/&nbsp;/gi, " ");

@@ -38,7 +38,7 @@ export default function EditLog() {
         <li>账户：{adminName}</li>
         <li>
           动作：
-          {type == 1 ? "增加" : type == 2 ? "删除" : type == 3 ? "修改" : "无"}
+          {type === 1 ? "增加" : type === 2 ? "删除" : type === 3 ? "修改" : "无"}
         </li>
         <li>
           <span>动作内容：</span>
